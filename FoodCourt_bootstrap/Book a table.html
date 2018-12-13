@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/foodcourt.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="images/Food Court 1.png" width="100" height="30" class="d-inline-block align-top" alt="">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home-foodcourt.html" style="color: blueviolet">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="menulist-foodcourt.html" style="color: blueviolet">Menu list </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="place an order.html" style="color: blueviolet">Place your order</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Book a table.html" style="color: blueviolet">Book a table </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact us-foodcourt.html" style="color: blueviolet">Contact us </a>
+                </li>
+            </ul>
+
+            <a class="btn btn-light btn-sm" href="Sign up-foodcourt.html" role="button"> Sign up</a></br>
+            <a class="btn btn-light btn-sm" href="sign in-FoodCourt.html" role="button"> Sign in</a>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"></div>
+
+    <div id='carousel_inner'>
+        <div class="carousel-item active" role="listbox" !important>
+            <img class="d-block w-100" src="images/restaurants.jpg" alt="First slide" style="max-width:1500px; max-height:300px">
+            <div class="carousel-caption d-block">
+                <div class="row">
+                <div class="col-sm-12">
+                <h1>Book a table</h1>
+                <p class="lead" style="color:white"><i>You can now book a table ahead of time for your family treats, hangouts and more.</i>
+                </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="lead" style="color:white"> Are you looking for a serene and comfortable environment to host a small events such as family treats, hangouts, get-together, meetings and more? Look no further, you can request ahead of time for a table for you and your guests. Please fill the form below if you are interested. Thank you. </p><br>
+    <div class="container" style="width: 50%">
+        <form>
+            <fieldset>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="firstname">FirstName</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="first name">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="lastname">LastName</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="last name">
+                    </div>
+    
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="PhoneNumber">Phone number</label>
+                        <input type="text" class="form-control" id="PhoneNumber" placeholder="08099999999">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="MealOption">Meal Option</label>
+                        <select id="MealOption" class="form-control" Multiple>
+                            <option selected>Rice Combo</option>
+                            <option>Swallow Combo</option>
+                            <option>Snacks</option>
+                            <option>Drinks</option>
+                        </select>
+                    </div>
+                     <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label for="GuestNumber">Number of Guests </label>
+                            <input type="number" class="form-control" id="GuestNumber">
+                            </div>
+        
+                        <div class="form-group col-sm-4">
+                                    <label for="Date">Date of the event </label>
+                                    <input type="date" class="form-control" id="Date">
+        
+                        </div>
+                        <div class="form-group col-sm-4">
+                                    <label for="time">Time of the event</label>
+                                    <input type="time" class="form-control" id="time">
+                         </div>
+                        </div>
+                        </div>
+                     </div>
+            </fieldset>
+    
+            <br>
+            <button type="submit" class="btn btn-primary btn-sm"  style="float:right">Submit</button>
+    
+        </form>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/foodcourt.js"></script>
+</body>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<footer>
+    <p style="text-align:center; color:blueviolet"> (c)Copyright FoodCourt Nigeria </p><br>
+    <i class="fab fa-facebook"></i>
+</footer>
+</html>

@@ -1,0 +1,86 @@
+/* ---------------- General Daclaration-------------- */
+#carousel_inner {
+    float:inherit ;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    max-width: 1500px;
+    max-height:300px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+    
+
+
+#carousel-item {
+    width: 100%;
+    height: 110px;
+       margin-bottom: 50px;
+    border-bottom: 0px;
+    max-width: 1500px;
+    max-height:300px;
+}
+#carousel-item active {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+h1{
+color: blueviolet;
+font-family: Arial, Helvetica, sans-serif
+} 
+.lead{
+    color: blueviolet;
+}
+.carousel-caption{
+    background-color: black;
+    padding:1% 0% 1% 0%;
+    border-radius: 10px;
+
+}
+a{
+    color: blueviolet;
+   
+}
+body{
+ background-color:black;
+}
+.btn{
+    text-align: right;
+    border-color:blueviolet
+}
+h3{
+    text-align: center;
+    color: blueviolet;
+
+}
+/*MENU LIST PAGE STYLING*/
+h5{
+    color: blueviolet
+}
+p{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px
+}
+a{
+    color:white;
+}
+label{
+    color: white;
+}
+li{
+    color: white;
+}

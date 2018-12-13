@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Place an order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/foodcourt.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/Food Court 1.png" width="100" height="30" class="d-inline-block align-top" alt="">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home-foodcourt.html" style="color: blueviolet">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="menulist-foodcourt.html" style="color: blueviolet">Menu list </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="place_an_order.html" style="color: blueviolet">Place your order</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="book a table.html" style="color: blueviolet">Book a table </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact us-foodcourt.html" style="color: blueviolet">Contact us </a>
+                </li>
+            </ul>
+
+            <a class="btn btn-light btn-sm" href="Sign up-foodcourt.html" role="button"> Sign up</a></br>
+            <a class="btn btn-light btn-sm" href="sign in-FoodCourt.html" role="button" style="margin-left:20px"> Sign in</a>
+            <a class="btn btn-light btn-sm" href="https://paystack.com/pay/av9dhi690b" role="button" style="margin-left:0px"> Pay with Paystack</a>
+
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover"
+        data-wrap="true">
+
+        <div id='carousel_inner' role="listbox" !important>
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/foods 3.jpg" alt="First slide" style="max-width:1500px; max-height:300px">
+                <div class="carousel-caption d-sm-block">
+                    <h1>Place your order</h1>
+                    <p class="lead" style=" color:white">You can order your food with ease and no stress</p>
+                   
+                </div>
+            </div>
+            </div>
+            <br><br>
+            <p> We appreciate our distinguished customers for your frequent patronage. You can order for your meal from the comfort of your home or anywhere you are and we will get it across to you in the shortest of time. Please be informed also that you can now make payments here by clicking on the paystack button on the menu bar after submitting your menu order below,</h4>
+                <div class="container" style="width: 50%">
+                <form method="POST" action="FoodCourtProcess.php">
+                    <fieldset>
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="firstname">FirstName</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="first name" id="fname" onchange="myFunction()">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="lastname">LastName</label>
+                <input type="text" class="form-control"  id="lastname" name="lastname" placeholder="last name" id="fname" onchange="myFunction()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="InputAddress"> Delivery Address</label>
+            <input type="text" class="form-control" Id="InputAddress" name="InputAddress" placeholder="1234 Bola St, Challenge,Ibadan">
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-sm-4">
+                <label for="state">state</label>
+                <input type="text" class="form-control" id="state" name="state" placeholder="Oyo">
+            </div>
+                <div class="form-group col-sm-4">
+                    <label for="PhoneNumber">Phone number</label>
+                    <input type="number" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="08099999999">
+                </div>
+            <div class="form-group col-sm-4">
+                <label for="MealOption">Meal Option</label>
+                <select id="MealOption" name="MealOption" class="form-control" Multiple>
+                    <option selected>Rice Combo</option>
+                    <option>Swallow Combo</option>
+                    <option>Snacks</option>
+                    <option>Drinks</option>
+                </select>
+            </div>
+    
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="RiceCombo">Choose your desired Rice Combo</label>
+                <select id="RiceCombo" name="RiceCombo" class="form-control" multiple>
+                    <option selected>Jollof Rice with Dodo</option>
+                    <option>Jollof Rice with Salad</option>
+                    <option>Fried rice with Dodo</option>
+                    <option>Fried rice with Salad</option>
+                    <option>Fried rice with Dodo</option>
+                    <option>Fried rice with Salad</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-6">
+            <label for="RicePlate">How many plates of each Rice Combo?</label>
+            <input type="number" class="form-control" id="RicePlate" name="RicePlate">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="SwallowCombo">Choose your desired Swallow Combo</label>
+                    <select id="SwallowCombo" name="SwallowCombo" class="form-control" multiple>
+                        <option selected>Pounded yam with Egusi soup</option>
+                        <option>Pounded yam with Edikang kong</option>
+                        <option>Pounded yam with Afang soup</option>
+                        <option>Pounded yam with Efo riro</option>
+                        <option>Eba with okro soup</option>
+                        <option>Eba with Egusi soup</option>
+                        <option>Amala with Ewedu soup</option>
+                        <option> Amala with Ewedu and Gbegiri soup</option>
+                        <option>Fufu with banga soup</option>
+                        <option>Fufu with Edikang kong</option>
+                        <option>Fufu with Afang soup</option>
+                        <option>Pounded yam with Egusi soup</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="SwallowNumber">How many plates of each Swallow Combo?</label>
+                    <input type="number" class="form-control" id="SwallowNumber" name="SwallowNumber">
+                </div>
+           <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="Meat">Choose your desired meattype</label>
+                <select id="Meat" name="Meat" class="form-control" multiple>
+                    <option selected> Fried Beef</option>
+                    <option>Fried Chicken</option>
+                    <option>Barbeque Chicken</option>
+                    <option>Fried Fish</option>
+                    <option>Grilled Fish</option>
+                    <option>Peppered Ponmo</option>
+                    <option> Pepper Snails</option>
+                   
+                </select>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="MeatNumber">How many pieces of each meat type selected?</label>
+                <input type="number" class="form-control" id="MeatNumber" name="MeatNumber">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="Snacks">Choose your desired snacks</label>
+                    <select id="Snacks" name="Snacks" class="form-control" multiple>
+                        <option selected> Meatpie</option>
+                        <option>Sausage</option>
+                        <option>Doughnut</option>
+                        <option>Sandwiches</option>
+                        <option>Burger</option>
+                        <option>small chops</option>
+            
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="SnacksNumber">How many plates of each snacks selected?</label>
+                    <input type="number" class="form-control" id="SnacksNumber" name="SnacksNumber">
+                </div>
+    
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="Drinks">Choose your desired drinks</label>
+                    <select id="Drinks" name="Drinks" class="form-control" multiple>
+                        <option selected> Bottled water</option>
+                        <option>Soft drinks</option>
+                        <option>Chapman</option>
+                        <option>Lemonade</option>
+                        <option>Tea </option>
+                         <option>Coffee</option>
+                
+                    </select>
+                    </div>
+                <div class="form-group col-sm-6">
+                    <label for="DrinksNumber">How many bottles/cups of each drinks selected?</label>
+                        <input type="number" class="form-control" id="DrinksNumber" name="DrinksNumber">
+                    </div>
+        
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="date_delivery">The date you want your meal to be delivered</label>
+                    <input type="date" class="form-control" id="date_delivery" name="date_delivery">
+                   
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="time_delivery">The time you want your meal to be delivered</label>
+                    <input type="time" class="form-control" id="time_delivery" name="time_delivery">
+                </div>
+            
+            
+            <div class="form-row">
+                <div class="form-group col-sm-12">
+                    <label for="Payment">Payment Options</label>
+                    <select id="Payment" name="Payment" class="form-control">
+                        <option selected>Pay on delivery </option>
+                        <option>Pay online with Paystack</option>
+                    
+                    </select>
+                </div>
+            </div>
+        </div>
+        </fieldset>
+    
+    <br>
+    <button type="submit" class="btn btn-primary btn-sm" style="float:right">Submit Order</button>
+
+    </form>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/foodcourt.js"></script>
+</body>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<footer>
+    <p style="text-align:center; color:blueviolet"> (c)Copyright FoodCourt Nigeria </p><br>
+    <i class="fab fa-facebook"></i>
+</footer>
+
+</html>
